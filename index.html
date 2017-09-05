@@ -4,25 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="assets/css/reset.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="assets/css/style.css" type="text/css" rel="stylesheet">
     <title>Psychic Game</title>
 </head>
 
 <body>
 
-    <div class="game">
-        <h1><strong>The Psychic Game</strong></h1>
+    <div class="container" id="big">
 
-        <h2>Guess the letter I'm thinking of</h2>
-        
-            <p id="wins">Wins:</p>
+        <div class="container">
 
-            <p id="losses">Loses:</p>
-          
-            <p id="guessesLeft">Guesses Left:</p>
-       
-            <p id="guesses">Your Guesses:</p>
+            <div class="row">
+                <div class="col-lg-4">
+                </div>
+                <div class="col-lg-3 text-center title">
+                    <h1><strong>The Psychic Game</strong></h1>
+                </div>
+                <div class="col-lg-5">
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                </div>
+                <div class="col-lg-3 text-center game">
+                    <h2>Guess the letter I'm thinking of</h2>
+                </div>
+                <div class="col-lg-5">
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row filler">
+                <div class="col-lg-12 filling">
+                </div>
+            </div>
+        </div>
         
-    <script src="JavaScript/game.js"></script>  
+        <div class="container">
+            <div class="row scoreBoard">
+                <div class="col-lg-3">
+                </div>
+                <div class="col-lg-4 text-center">
+                    <h3 id="wins">Wins:   </h3>
+                    <h3 id="losses">Loses:   </h3>
+                <div class="col-lg-5">
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+
+        <div class="container">
+            <div class="row scoreBoard">
+                <div class="col-lg-3">
+                </div>
+                <div class="col-lg-4 text-center">
+                    <h3 id="guessesLeft">Guesses Left:</h3>
+                </div>
+                <div class="col-lg-5">
+                </div>
+            </div>      
+        </div>
+
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+
+        <div class="container">
+            <div class="row scoreBoard">
+                <div class="col-lg-3">
+                </div>
+                <div class="col-lg-4 text-center">
+                    <h4 id="guesses">Your Guesses:</h4>
+                </div>
+                <div class="col-lg-5">
+                </div>
+            </div>
+        </div>      
+
+    </div>
+    
+    
+    <footer class="footer"></footer> 
+    <script src="assets/JavaScript/game.js"></script>  
 </body>
 </html>

@@ -30,7 +30,7 @@ document.onkeyup = function(attempt) {
         if (turn == target){
             wins++;
             guessesLeft = 9;
-            document.getElementById("wins").textContent = "Wins " + wins;
+            document.getElementById("wins").textContent = "Wins: " + wins;
             alert("Winner, Winner, Chicken Dinner!");
             input.textContent = "Your Guesses: " + "";
             target = letter[Math.floor(Math.random() * letter.length)];
@@ -39,7 +39,7 @@ document.onkeyup = function(attempt) {
             document.getElementById("guessesLeft").textContent = "Guesses Left: " + guessesLeft;
         } else if (turn != target && guessesLeft == 1) {
             losses++;
-            document.getElementById("losses").textContent = "Losses " + losses;
+            document.getElementById("losses").textContent = "Losses: " + losses;
             guessesLeft = 9;
             input.textContent = "Your Guesses: " + "";
             alert("You lose!");
