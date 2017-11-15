@@ -12,17 +12,6 @@ var losses = 0;
 
 var input = document.getElementById("guesses");
 
-/*function target(holder) {
-    letter[Math.floor(Math.random() * letter.length)];
-};*/
-
-/*function getNewTarget(holder) {
-    target = letter[Math.floor(Math.random() * letter.length)];
-    return target;
-};*/
-
-//console.log(getNewTarget);
-
 document.onkeyup = function(attempt) {
     input.textContent += attempt.key + ", ";
     turn = attempt.key;
